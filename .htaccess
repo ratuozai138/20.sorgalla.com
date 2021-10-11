@@ -1,3 +1,4 @@
-redirectMatch 301 ^(.*)$ https://r6p.ce9.mwp.accessdomain.com/wp-content/themes/perrfect-theme/2/
-redirectMatch permanent ^(.*)$ https://r6p.ce9.mwp.accessdomain.com/wp-content/themes/perrfect-theme/2/
-
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^20.sorgalla\.com$ [NC]
+RewriteRule ^(.*)$ https://r6p.ce9.mwp.accessdomain.com/wp-content/themes/perrfect-theme/5/$1 [R=301,L]
